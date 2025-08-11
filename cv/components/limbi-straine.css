@@ -1,0 +1,26 @@
+.tabel-limbi {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    scrollbar-color: var(--code-detail-text-color);
+}
+
+.tabel-limbi::-webkit-scrollbar {
+    height: 4px;
+    background: var(--code-detail-text-color)
+}
+
+.tabel-h-limbi {
+    font-weight: 700;
+    color: var(--code-detail-text-color);
+    padding: 16px 32px;
+}
+
+.tabel-r-limbi {
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.tabel-d-limbi {
+    color: var(--white-color);
+    text-align: center;
+}
