@@ -4,10 +4,10 @@ import Anchor from "./Anchor";
 import { bodyW } from "../variables/variables";
 import H3 from "./H3";
 import { Link } from "react-router-dom";
-import { usePathname } from "next/navigation";
+import { useLocation } from "react-router-dom";
 
 const Ending = () => {
-  const pathName = usePathname();
+  const location = useLocation();
 
   return (
     <FadeInOnScroll>
@@ -15,7 +15,7 @@ const Ending = () => {
         <Anchor text="section" />
         <H3 text="Nu ești convins dacă m-aș potrivi în echipa ta?" />
         <div className={`${bodyW} flex justify-center`}>
-          <Link href={pathName}>
+          <Link href={location.pathname}>
             <button className="hero-cta-btn">Vezi portofoliu</button>
           </Link>
         </div>
@@ -31,3 +31,4 @@ const Ending = () => {
 };
 
 export default Ending;
+
