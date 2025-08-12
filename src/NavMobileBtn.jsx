@@ -15,7 +15,7 @@ const NavMobileBtn = () => {
       </button>
       {isMobileNavOpen ? (
         <section className="w-screen h-screen z-10 fixed top-0 left-0 pt-21 bg-black/75 flex flex-col items-center justify-between">
-          <Link to="/" className="nav-logo">
+          <Link to="/" className="nav-logo mr-2">
             SERGIU CIAUSU
           </Link>
           <div className="flex flex-col flex-1 mb-32 items-center justify-center gap-4">
@@ -34,3 +34,4 @@ const NavMobileBtn = () => {
 };
 
 export default NavMobileBtn;
+
