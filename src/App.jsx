@@ -1,6 +1,7 @@
 import "./App.css";
 import "./globals.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Copywriting from "../copywriting/Copywriting";
 import Home from "./Home";
 import ProiecteComponent from "../proiecte/ProiecteComponent";
 import StudiiComponent from "../studii/StudiiComponent";
@@ -17,6 +18,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/copywriting" element={<Copywriting />} />
           <Route path="/proiecte" element={<ProiecteComponent />} />
           <Route path="/studii" element={<StudiiComponent />} />
           <Route path="/cv" element={<CV />} />
