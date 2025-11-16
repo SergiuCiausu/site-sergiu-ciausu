@@ -8,6 +8,23 @@ import { Link } from "react-router-dom";
 const Proiecte = () => {
   const proiecte = [
     {
+      titlu: "FakeOrReal",
+      descriere: "Aplicație full stack ce clasifică o știre ca fiind adevărată sau falsă, cu următoarele funcționalități:",
+      bullets: [
+        "Posibilitatea de a crea câte un chat nou, precum și reținerea acestora într-o bază de date și redarea lor în sidebar;",
+        "Răspunsuri generate cu AI și posibilitatea de a continua conversația din fiecare chat oricând;",
+        "Funcții de căutare ale chat-urilor și afișare default a rezultatelor în funcție de perioada de timp care a trecut de la ultima actualizare a fiecărui chat;",
+        "Funcționalitate de autentificare și salvarea sesiunii per utilizator într-o bază de date;",
+        "Aplicație cu layout dinamic ce funcționează în stil SPA",
+      ],
+      python: 35.4,
+      css: 13.2,
+      javascript: 50.2,
+      liniiCod: 1500,
+      imagine: "/fake-or-real-banner.png",
+      link: "https://github.com/SergiuCiausu/edu-AIde",
+    },
+    {
       titlu: "Edu Docs",
       descriere:
         "Website de „smart study” pentru elevii de liceu, cu toată materia prevăzută în programa școlară, pentru fiecare profil și specializare, cu elemente ce facilitează parcurgerea lecțiilor, precum:",
@@ -111,12 +128,12 @@ const Proiecte = () => {
                   <div
                     className={`flex items-center gap-4`}
                     style={{
-                      width: `${(proiect.typescript * 516) / 100 + 184}px`,
+                      width: `${((proiect.typescript ? proiect.typescript : proiect.python) * 516) / 100 + 184}px`,
                     }}
                   >
-                    <p className="limbaj-programare-label w-[111px] text-right">Typescript</p>
+                    <p className="limbaj-programare-label w-[111px] text-right">{proiect.typescript ? "Typescript" : "Python"}</p>
                     <div className={`flex-1 typescript-bar flex`}></div>
-                    <p className="limbaj-programare-label">{`${proiect.typescript}%`}</p>
+                    <p className="limbaj-programare-label">{`${proiect.typescript ? proiect.typescript : proiect.python}%`}</p>
                   </div>
                   <div
                     className={`flex items-center gap-4`}
