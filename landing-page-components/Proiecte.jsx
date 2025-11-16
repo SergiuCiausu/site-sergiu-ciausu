@@ -1,4 +1,3 @@
-import React from "react";
 import H3 from "../components/H3";
 import { bodyW } from "../variables/variables";
 import "./proiecte.css";
@@ -6,6 +5,13 @@ import { Link } from "react-router-dom";
 
 const Proiecte = () => {
   const proiecte = [
+    {
+      titlu: "FakeOrReal",
+      descriere: "Aplicație full stack ce clasifică o știre ca fiind adevărată sau falsă.",
+      eticheta: "Proiect compact",
+      imagine: "/fake-or-real-banner.png",
+      link: "https://github.com/SergiuCiausu/edu-AIde",
+    },
     {
       titlu: "Edu Docs",
       descriere:
@@ -44,11 +50,11 @@ const Proiecte = () => {
       <div id="proiecte">
         <H3 text="Proiecte de web design & development"></H3>
       </div>
-      <div className={`${bodyW} flex max-sm:flex-col gap-5`}>
+      <div className={`${bodyW} flex max-sm:flex-col flex-wrap justify-center gap-5`}>
         {proiecte.map((proiect, index) => (
-          <Link key={index} to={proiect.link} className="p-8 flex sm:flex-25 flex-col max-sm:items-center max-sm:gap-2" target="_blank">
+          <Link key={index} to={proiect.link} className="p-8 flex sm:basis-1/4 flex-col max-sm:items-center max-sm:gap-2" target="_blank">
             <div className="relative mb-6 max-sm:flex max-sm:flex-col max-sm:items-center">
-              <img src={proiect.imagine} width={301} height={210} alt={proiect.imagine.slice(1, proiect.imagine.length - 3)}></img>
+              <img src={proiect.imagine} alt={proiect.imagine.slice(1, proiect.imagine.length - 3)}></img>
               <p className={`eticheta ${proiect.titlu === "Make Me Fit" ? "eticheta-roz" : ""} absolute top-0 right-0`}>{proiect.eticheta}</p>
             </div>
             <h5 className="max-sm:text-center">{proiect.titlu}</h5>
