@@ -7,19 +7,13 @@ import Anchor from "/components/Anchor";
 const Studii = () => {
   const studii = [
     {
-      clase: "0-IV",
-      scoala: "Liceul Teoretic „Emil Racoviță” Techirghiol",
+      clase: "Licență Specializarea Informatică (în prezent Anul 1)",
+      scoala: "Facultatea de Matematică și Informatică, Universitatea Ovidius Constanța",
       bullets: [
-        "- am fost tipul de copil care voia să-și facă temele exemplar la fiecare materie și am avut doar nota FB în toți anii de școală primară;",
-        "- știam că începând cu gimnaziul trebuia să mă mut de urgență la o școală din Constanța, colectivul din Techirghiol nefiind prea... interesat de școală.",
-      ],
-    },
-    {
-      clase: "V-VIII",
-      scoala: "Școala Gimnazială nr.24 „Ion Jalea” Constanța",
-      bullets: [
-        "- și în gimnaziu am fost tipul de elev care voia să fie exemplar la fiecare materie, dovadă și faptul că am terminat șef de promoție, având media generală 10 în fiecare an de gimnaziu;",
-        "- de când am ajuns clasa a V-a m-am văzut la Mircea, însă știam că gimnaziul la acea școală era mult mai dificil, așa că am decis că liceul va fi momentul oportun.",
+        "- dorința mea este să-mi construiesc o carieră în domeniul IT, sunt convins că m-am născut cu niște avantaje care cred că mă vor ajuta să devin un programator foarte bun;",
+        "- n-am ales o facultate din alt oraș (din București, de exemplu), pentru că știu că în IT se pot deschide portițe de unde te aștepți mai puțin;",
+        "- astfel, cred că dacă m-aș fi mutat la București pentru studii superioare, iar apoi aș fi fost nevoit să mă mut din nou într-un alt oraș unde mi-am găsit de muncă, părinții mei ar fi nevoiți să suporte un efort financiar dublu, față de varianta în care mă mut doar atunci când îmi găsesc un loc de muncă în alt oraș;",
+        "- acest plan este avantajos mai ales datorită faptului că materia predată la facultatea din Constanța este similară cu facultatea omoloagă de la București, din cadrul UniBuc.",
       ],
     },
     {
@@ -31,13 +25,19 @@ const Studii = () => {
       ],
     },
     {
-      clase: "Aș vrea să urmez studii universitare și de masterat la:",
-      scoala: "Facultatea de Matematică și Informatică, Universitatea Ovidius Constanța",
+      clase: "V-VIII",
+      scoala: "Școala Gimnazială nr.24 „Ion Jalea” Constanța",
       bullets: [
-        "- dorința mea este să-mi construiesc o carieră în domeniul IT, sunt convins că m-am născut cu niște avantaje care cred că mă vor ajuta să devin un programator foarte bun;",
-        "- n-am ales o facultate din alt oraș (din București, de exemplu), pentru că știu că în IT se pot deschide portițe de unde te aștepți mai puțin;",
-        "- astfel, cred că dacă m-aș fi mutat la București pentru studii superioare, iar apoi aș fi fost nevoit să mă mut din nou într-un alt oraș unde mi-am găsit de muncă, părinții mei ar fi nevoiți să suporte un efort financiar dublu, față de varianta în care mă mut doar atunci când îmi găsesc un loc de muncă în alt oraș;",
-        "- acest plan este avantajos mai ales datorită faptului că materia predată la facultatea din Constanța este similară cu facultatea omoloagă de la București, din cadrul UniBuc.",
+        "- și în gimnaziu am fost tipul de elev care voia să fie exemplar la fiecare materie, dovadă și faptul că am terminat șef de promoție, având media generală 10 în fiecare an de gimnaziu;",
+        "- de când am ajuns clasa a V-a m-am văzut la Mircea, însă știam că gimnaziul la acea școală era mult mai dificil, așa că am decis că liceul va fi momentul oportun.",
+      ],
+    },
+    {
+      clase: "0-IV",
+      scoala: "Liceul Teoretic „Emil Racoviță” Techirghiol",
+      bullets: [
+        "- am fost tipul de copil care voia să-și facă temele exemplar la fiecare materie și am avut doar nota FB în toți anii de școală primară;",
+        "- știam că începând cu gimnaziul trebuia să mă mut de urgență la o școală din Constanța, colectivul din Techirghiol nefiind prea... interesat de școală.",
       ],
     },
   ];
@@ -67,10 +67,10 @@ const Studii = () => {
         </div>
         <FadeInOnLoad>
           <div className="studii-bar h-full sm:h-[1400px] relative flex flex-col items-center max-sm:ml-8">
-            <div className="studii-cerc absolute top-18 max-sm:top-7"></div>
-            <div className="studii-cerc absolute top-90 max-sm:top-110"></div>
-            <div className="studii-cerc absolute top-167 max-sm:top-235"></div>
-            <div className="studii-cerc absolute top-240 max-sm:top-354"></div>
+            <div className="studii-cerc absolute top-15 max-sm:top-7"></div>
+            <div className="studii-cerc absolute top-138 max-sm:top-110"></div>
+            <div className="studii-cerc absolute top-212 max-sm:top-235"></div>
+            <div className="studii-cerc absolute top-292 max-sm:top-354"></div>
           </div>
         </FadeInOnLoad>
       </div>
