@@ -6,7 +6,7 @@ import { bodyW } from "/variables/variables";
 import FadeInOnLoad from "./FadeInOnLoad";
 
 const Navbar = () => {
-  const navLinks = ["Proiecte", "Studii", "CV", "Hobby-uri"];
+  const navLinks = ["Copywriting", "Proiecte", "Studii", "CV", "Hobby-uri"];
 
   return (
     <FadeInOnLoad>
@@ -37,3 +37,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
