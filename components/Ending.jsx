@@ -1,21 +1,17 @@
-import React from "react";
 import FadeInOnScroll from "./FadeInOnScroll";
 import Anchor from "./Anchor";
 import { bodyW } from "../variables/variables";
 import H3 from "./H3";
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 
 const Ending = () => {
-  const location = useLocation();
-
   return (
     <FadeInOnScroll>
       <section className="sm:my-24">
         <Anchor text="section" />
         <H3 text="Nu ești convins dacă m-aș potrivi în echipa ta?" />
         <div className={`${bodyW} flex justify-center`}>
-          <Link href={location.pathname}>
+          <Link onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             <button className="hero-cta-btn">Vezi portofoliu</button>
           </Link>
         </div>
@@ -31,4 +27,3 @@ const Ending = () => {
 };
 
 export default Ending;
-
